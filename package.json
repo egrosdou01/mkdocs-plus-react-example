@@ -1,0 +1,16 @@
+{
+  "name": "mkdocs-plus-react-example",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev:site": "cd docs/test && npm run dev",
+    "dev:docs": "mkdocs serve",
+    "build:site": "cd docs/test && npm run build",
+    "build:docs": "mkdocs build --strict",
+    "build:all": "npm run build:site && npm run build:docs",
+    "combine": "mkdir -p local-deploy/mkdocs-plus-react-example && cp -r docs/test/out/* local-deploy/mkdocs-plus-react-example/ && mkdir -p local-deploy/mkdocs-plus-react-example/docs && cp -r site/* local-deploy/mkdocs-plus-react-example/docs/",
+    "serve": "npx serve@latest local-deploy -p 8080",
+    "preview": "npm run build:all && npm run combine && npm run serve",
+    "clean": "rm -rf docs/test/out docs/test/.next site local-deploy"
+  }
+}

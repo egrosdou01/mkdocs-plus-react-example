@@ -1,0 +1,54 @@
+site_name: Mkdocs and React Example
+site_url: https://egrosdou01.github.io/mkdocs-plus-react-example/docs
+
+repo_name: egrosdou01/mkdocs-plus-react-example
+repo_url: https://github.com/egrosdou01/mkdocs-plus-react-example
+edit_uri: ""
+
+markdown_extensions:
+- admonition
+- pymdownx.details
+- pymdownx.superfences
+- attr_list
+- md_in_html
+- footnotes
+- pymdownx.critic
+- pymdownx.highlight:
+    anchor_linenums: true
+    line_spans: __span
+    pygments_lang_class: true
+- pymdownx.superfences:
+    custom_fences:
+    - name: mermaid
+      class: mermaid
+      format: !!python/name:pymdownx.superfences.fence_code_format ""
+- pymdownx.tabbed:
+    alternate_style: true
+- pymdownx.inlinehilite
+- pymdownx.snippets
+- pymdownx.emoji:
+    emoji_index: !!python/name:material.extensions.emoji.twemoji ""
+    emoji_generator:
+
+      !!python/name:material.extensions.emoji.to_svg ""
+theme:
+  name: material
+  features:
+  - content.code.copy
+  - search.share
+  - navigation.footer
+  - navigation.instant.progress
+  - content.code.annotate
+
+extra:
+  homepage: /mkdocs-plus-react-example/
+plugins:
+- search
+
+docs_dir: docs
+site_dir: site
+
+exclude_docs: |
+  test/
+
+use_directory_urls: true
