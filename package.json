@@ -1,6 +1,6 @@
 {
   "name": "mkdocs-plus-react-example",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev:site": "cd docs/test && npm run dev",
