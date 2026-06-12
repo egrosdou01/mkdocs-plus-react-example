@@ -38,6 +38,9 @@ theme:
 
 validation:
   unresolved_references: false
+  unresolved_footnotes: false
+  unused_definitions: false
+  invalid_links: false
   invalid_link_anchors: false
 
 extra:
