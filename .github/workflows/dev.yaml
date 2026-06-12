@@ -27,7 +27,7 @@ jobs:
         node-version: '20'
         cache: 'npm'
         cache-dependency-path: docs/test/package-lock.json
-    - run: pip install zensical==0.0.32
+    - run: pip install zensical==0.0.45
     - name: Build React website
       working-directory: docs/test
       run: |
