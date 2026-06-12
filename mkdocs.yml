@@ -36,6 +36,10 @@ theme:
   - navigation.instant.progress
   - content.code.annotate
 
+validation:
+  unresolved_references: false
+  invalid_link_anchors: false
+
 extra:
   homepage: /mkdocs-plus-react-example/
 plugins:
